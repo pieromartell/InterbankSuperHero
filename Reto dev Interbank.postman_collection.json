@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "e54c5e48-79fc-46a4-92aa-ee426c1af022",
+		"name": "Reto dev Interbank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20505552",
+		"_collection_link": "https://solar-astronaut-584729.postman.co/workspace/Programa-Interbank~d73b4104-d489-4c55-92e0-6dcbe888b30f/collection/20505552-e54c5e48-79fc-46a4-92aa-ee426c1af022?action=share&source=collection_link&creator=20505552"
+	},
+	"item": [
+		{
+			"name": "Hability",
+			"item": [
+				{
+					"name": "List Hability Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8091/hability",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"hability"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Hability Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Valor\",\r\n    \"powerlevel\":\"Alto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8091/hability",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"hability"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Hability Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Valor super Rapido\",\r\n    \"powerlevel\":\"ALto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8091/hability/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"hability",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Hability Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8091/hability/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"hability",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SuperHero",
+			"item": [
+				{
+					"name": "List Superheroes Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8091/SuperHero",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"SuperHero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Superhero Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Superman\",\r\n    \"description\": \"Descripción de Superman\",\r\n    \"powerLevel\": \"medio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8091/SuperHero",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"SuperHero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Superhero Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Batman\",\r\n    \"description\": \"Batman es un heroe de DC comics\",\r\n    \"powerLevel\": \"Alto\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8091/SuperHero/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"SuperHero",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add  Hability to Superheroe Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hability\": [1]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8091/SuperHero/1/addhabilitys",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"SuperHero",
+								"1",
+								"addhabilitys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Hability to Superheroe Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hability\": [1]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8091/SuperHero/1/removehabilitys",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"SuperHero",
+								"1",
+								"removehabilitys"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete  SuperHeroe Copy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hability\": [5]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8091/SuperHero/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"SuperHero",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
